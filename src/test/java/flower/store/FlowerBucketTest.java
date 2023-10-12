@@ -1,9 +1,9 @@
 package flower.store;
+import java.util.Random;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-import java.util.Random;
 
 public class FlowerBucketTest {
     private static final Random RANDOM_GENERATOR = new Random();
