@@ -1,20 +1,22 @@
 package flower.store;
-import java.util.Random;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
+import java.util.Random;
 
 public class FlowerBucketTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_QUANTITY = 1000;
     private static final int MAX_PRICE = 100;
 
-    public FlowerBucket flowerBucket = new FlowerBucket();
+    private FlowerBucket flowerBucket;
 
     @BeforeEach
     public void init() {
+        flowerBucket = new FlowerBucket();
     }
+
     @Test
     public void testPrice() {
         int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
